@@ -233,7 +233,7 @@ namespace Lagerverwaltung_Teil4
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-                    Produkt p = new Produkt(); 
+                    Produkt p = new Produkt();
                     p.ProduktID = rdr.GetInt32(0);
                     if (rdr.IsDBNull(1) == false)
                         p.Marke = rdr.GetString(1);
